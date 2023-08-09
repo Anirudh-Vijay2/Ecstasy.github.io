@@ -1,0 +1,109 @@
+{
+    "Food":[
+        {
+            "Name": "Veg Fried Rice",
+            "type": "Veg",
+            "price": "$5",
+            "image": "../images/fried-rice.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Egg Fried Rice",
+            "type": "Non",
+            "price": "$8",
+            "image": "../images/Egg-Fried-Rice-3.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Chicken Biryani",
+            "type": "Non",
+            "price": "$10",
+            "image": "../images/chicken-biryani.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Chieck Noodles",
+            "type": "Non",
+            "price": "$4",
+            "image": "../images/chicken-noodles.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Bhatura",
+            "type": "Veg",
+            "price": "$5",
+            "image": "../images/bhatura.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Dosa",
+            "type": "Veg",
+            "price": "$5",
+            "image": "../images/dosa.jpeg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Kerala Porotta",
+            "type": "Veg",
+            "price": "$1",
+            "image": "../images/porotta.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Idli Vada",
+            "type": "Veg",
+            "price": "$5",
+            "image": "../images/iddli-vadda.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Chapati",
+            "type": "Veg",
+            "price": "$1",
+            "image": "../images/chapati.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Gobi Manchurian",
+            "type": "Veg",
+            "price": "$5",
+            "image": "../images/gobi-manchurian.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Panner Tikka",
+            "type": "Veg",
+            "price": "$10",
+            "image": "../images/panner-tikka.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Panner Butter",
+            "type": "Veg",
+            "price": "$10",
+            "image": "../images/panner-butter.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Chicken 65",
+            "type": "Non",
+            "price": "$10",
+            "image": "../images/chicken-65.JPG",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "Chicken Curry",
+            "type": "Non",
+            "price": "$15",
+            "image": "../images/chicken-curry.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        },
+        {
+            "Name": "French Fries",
+            "type": "Veg",
+            "price": "$3",
+            "image": "../images/french-fries.jpg",
+            "rating": ["star", "star", "star", "star", "star"]
+        }
+    ]
+}

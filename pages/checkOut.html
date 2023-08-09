@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-right: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #total{
+            width: 100%;
+            border: .1px solid black;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            padding: 2px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form {
+            display: grid;
+            grid-gap: 10px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        #items {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button a{
+            color: white;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+    <title>Ecstasy Eats & Delights</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Order Details</h1>
+            <label for="table-number">Enter Your Name</label>
+            <input type="text" id="table-number" name="table-number" required>
+            <label for="items">Items:</label>
+            <div id="items"></div>
+            <label for="total">Total Amount:</label>
+            <div id="total"></div>
+            <button type="submit"><a href="/pages/billing.html">Generate Bill</a></button>
+        </div>
+    </div>
+</body>
+<script>
+let products = JSON.parse(localStorage.getItem('list')) || [];
+let items = document.querySelector('#items');
+console.log(products);
+products.forEach((e) => {
+    items.innerHTML+=`<div>${e}</div>`
+    console.log(e)
+});
+
+let total = document.querySelector('#total');
+let totalAmount = 0;
+let amount = JSON.parse(localStorage.getItem('amount')) || [];
+
+amount.forEach((n) => {
+    totalAmount += parseInt(n);
+});
+total.innerHTML=`$${totalAmount}`
+</script>
+</html>

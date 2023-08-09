@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Bungee&family=Bungee+Spice&family=Edu+SA+Beginner:wght@500&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    height: 60px;
+    display: flex;
+}
+.nav-lnk{
+    text-decoration: none;
+    color: white;
+}
+
+.media .media-item a{
+    color: white;
+    text-decoration: none;
+}
+.toggle-icon{
+    display: none;
+}
+main::before{
+    content: "";
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+main{
+    background-color: rgb(25, 14, 14);
+    /* z-index: -1; */
+    height: 100vh; 
+    width: 100%;
+}
+.left-nav{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    z-index: 2;
+    justify-content: start;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item{
+    margin: 2%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    z-index: 5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.media{
+    font-size: 1.5rem;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid white;
+    height: auto;
+    z-index: 5;
+}
+
+.media-item{
+    margin: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    color: white;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.slogan{
+    font-family: 'Bona Nova', serif;
+}
+
+.food-products{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+}
+
+.card{
+    width: 320px;
+    height: 328px;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    box-shadow: 9px 9px 8px rgba(225, 223, 216, 0.92);
+}
+
+.card-image{
+    width: 100%;
+    height: 210px;
+    background-image: url('images/fried-rice.jpg');
+    background-size: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.product-name-price, .product-review{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border-bottom: .5px solid black;
+}
+
+.product-item{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star{
+    color: orange;
+}
+
+.card-button button{
+    font-family: 'Poppins', 'Sans serif';
+    font-weight: 500;
+    background-color: white;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    color: black;
+    margin: 2%;
+}
+
+.card-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.food-product-card{
+    margin: 50px;
+}
+
+.product-type{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid black;
+    /* padding: .5%; */
+}
+
+#display{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-products{
+    text-align: center;
+}
+
+.additional-functionalities{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.additional-functionalities select{
+     margin-top: 20px;
+}
+
+.filter select{
+    width: 100px;
+}
+
+.additonal-class{
+    margin: 10px;
+}
+
+#searchbar{
+    height: 30px;
+    width: 200px;
+}
+
+.hide{
+    display: none;
+}
+
+.logo-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* margin-top: 10px; */
+}
+
+.left-left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 735px) and (max-width: 1050px){
+    .navbar{
+        font-size: 12px;
+    }
+
+    .left-nav{
+        width: 10%;
+    }
+
+    .right-nav{
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 730px){
+    .left-nav{
+        width: 30%;
+    }
+
+    .right-nav{
+        width: 100%;
+    }
+    .nav-item{
+        margin: 1%;
+        font-size: 10px;
+    }
+
+    .media{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .toggle-icon{
+        display: block;
+        z-index: 2;
+        margin-right: 2%;
+    }
+
+    /* .nav-item, .media{
+        display: none;
+    } */
+
+    .right-nav{
+        flex-direction: column;
+        display: none;
+        z-index: 10;
+        transition: all;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .card{
+        margin: 3%;
+    }
+}
+
+
+.check-out-box{
+    position: relative;
+    bottom: 50px;
+}
+
+#checkout-btn{
+    width: 125px;
+    height: 28px;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    padding: 1px;
+    margin-bottom: 0;
+}
+
+.removeBtn{
+    display: none;
+}
+
+#about::before{
+    content: "";
+    background-image: url('../images/about-bck.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#about{
+    position: relative;
+    height: 100vh;
+    background-color: rgb(25, 14, 14);
+    width: 100%;
+    z-index: -1;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 5px white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+.about-container p {
+    text-align: center;
+    z-index: 100;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+@media (max-width: 790px) and (min-width: 545px){
+    .about-container p {
+        text-align: center;
+        z-index: 100;
+        font-size: 14.5px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+}
+
+@media (max-width: 545px){
+    .about-container h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        z-index: 100;
+    }
+    .about-container p {
+        text-align: center;
+        z-index: 100;
+        font-size: 14px;
+        line-height: 1.35;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+}
+
+#gallery{
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+}
+
+.gallery-images{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image-items{
+    margin: 50px;
+    box-shadow: 5px 5px 10px white;
+}
+
+.gallery-images img{
+    height: 250px;
+    width: 300px;
+}
+
+#gallery h1{
+    color: white;
+    font-family: 'Poppins';
+}
+
+#reservation{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+}
+
+#location{
+    width: 100%;
+    font-family: 'Poppins';
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+    text-align: center;
+}
+
+.location-box div{
+    margin: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location-box div .item{
+  margin: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.footer-contact, .footer-social {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.footer-contact h3, .footer-social h3 {
+    margin-bottom: 10px;
+}
+
+.footer-social .social-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-social a{
+    color: white;
+    font-size: 20px;
+}

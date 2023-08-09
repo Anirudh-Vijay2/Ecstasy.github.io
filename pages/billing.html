@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        .form {
+            display: grid;
+            grid-gap: 10px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+    <title>Ecstasy Eats & Delights Billing</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Ecstasy Eats & Delights Billing</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="credit-card">Credit Card Number:</label>
+            <input type="text" id="credit-card" name="credit-card" required>
+
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YYYY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit" onclick="localStorage.clear()"><a href="/pages/thankyou.html">Process Payment</a></button>
+        </div>
+    </div>
+</body>
+</html>
